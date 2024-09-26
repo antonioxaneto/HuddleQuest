@@ -1,25 +1,79 @@
-@media (max-width:750px){
+@media (max-width: 1500px){
     body{
         background-color: hsl(257, 40%, 49%);
-        background-image: url('../images/bg-mobile.svg') no-repeat;
-
-        flex-wrap: wrap;
+        background-image: url('../images/bg-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        height: 100vh;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;    
+        gap: 20px;
     }
 
     main{
-       flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        text-align: center;  
+        gap: 20px
     }
 
-    .logo{
-        margin-right: 250px;
+    header {
+        top: 0;
+        position: relative;
+        margin: 30px;
+    }
+
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    button {
+        width: 500px;
+        height: 100px;
+        font-size: 30px;
         margin-top: 50px;
     }
 
-    .image{
-        margin-top: 50px;
-       
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;             
+        position: relative;       
+        width: 100%;
+        margin-left: 150px;
     }
     }
+
+@media (min-width: 430px) and (max-width: 1040px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    button {
+        width: 250px;
+        height: 70px;
+        font-size: 20px;
+    }
+    
+    .image img{
+        margin-top: 0;
+        width: 100%;
+    }
+
+    main {
+        max-width: 600px;
+        margin-right: 100px;
+    }
+
+    .social-icones {
+        margin-right: 150px;
+    }
+}

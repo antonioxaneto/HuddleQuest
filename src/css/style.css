@@ -2,51 +2,107 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: hsl(257, 40%, 49%);
     background-image: url('../images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     min-height: 100vh;
     display: flex;
 }
 
-main{
+header {
+    padding: 50px;
+    width: 100%;
+    position: fixed;
+    margin-left: 35px;
+}
+
+main {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 50px;
 }
 
-.sobre{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 150px;
+.sobre { 
+    margin-left: 100px;
 }
 
-h2{
+.image img {
+   margin-top: 100px;
+   margin-left: 40px;
+}
+
+h1 {
     color: #fff;
     margin: 10px;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 600;
 }
 
-p{
+p {
     color: #fff;
     margin: 10px;
     font-weight: 400;
+    font-size: 16px;
 }
 
-a{
+button {
     color: hsl(257, 40%, 49%);
     background-color: #fff;
     border-radius: 50px;
     padding: 10px 48px;
     margin: 10px;
     font-weight: 400;
+    text-decoration: none;
+    font-size: 20px;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
 }
 
-.btn-register:hover {
-    box-shadow: 0.1px 0.1px 3px black;
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     transition: 0.3s;
 }
 
-.social{
-    font-size: 2rem;
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+}
+
+.social-icones {
+    display: flex;
+    gap: 20px;
+    margin-right: 60px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    margin-bottom: 20px;
+}
+
+i {
+    color: #fff;
+}
+
+.circle:hover {
+    background-color: hsl(300, 69%, 71%);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    transform: scale(1.2);
+    cursor: pointer;
 }
